@@ -53,12 +53,12 @@
                    ar
 				   ar-scale=""
 				   exposure="1"
-				  poster="Images/Poster.png" animation-name="LAYERS_EYE" autoplay>
+				  poster="Images/Poster.png" animation-name="LAYERS" autoplay>
 				  
     </model-viewer>
     <section class="attribution">
 	<div class="btn-container">
-				  <button type="button" onclick="LAYERS_EYE()">LAYERS_EYE</button>
+				  <button type="button" onclick="KeyAction()">KeyAction</button>
       <h1> EYE </h1>
 	  </div>
         </div>
@@ -81,8 +81,8 @@
               modelViewer = document.querySelector("#viewer-singleton");
               modelViewer.activateAR();
               clearInterval(checkExist);
-			  function LAYERS_EYE(){
-			  modelviewer.animationName= 'nome';
+			  function KeyAction(){
+			  modelviewer.animationName= 'KeyAction';
 			  }
            }
         }, 100);
